@@ -29,7 +29,7 @@ const Chat = ({ children }: ChatProps) => {
             .filter((item) => item.length > 0);
 
         try {
-            const response = await fetch('https://localhost:7271/api/Recipes/Main', {
+            const response = await fetch('https://api-chatdeia.onrender.com/api/Recipes/Main', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
